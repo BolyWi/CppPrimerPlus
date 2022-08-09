@@ -31,9 +31,9 @@ void Stock::buy(long num, double price)
 	}
 	else
 	{
-		shares += num;
-		share_val = price;
-		set_tot();
+		shares += num;		//记录股票数量
+		share_val = price;  //记录股票价格
+		set_tot();			//记录总市值
 	}
 }
 
@@ -61,8 +61,8 @@ void Stock::sell(long num, double price)
 
 void Stock::update(double price)
 {
-	share_val = price;
-	set_tot();
+	share_val = price;	//更新股票价格
+	set_tot();			//更新总市值
 }
 
 void Stock::show()

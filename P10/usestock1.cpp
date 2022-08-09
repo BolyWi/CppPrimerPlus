@@ -6,7 +6,7 @@
 
 int main()
 {
-    //{
+    {
         using std::cout;
         cout << "Using constroctors to creat new object\n";
         Stock stock1("NanoSmart", 12, 20.0);
@@ -25,6 +25,7 @@ int main()
         cout << "Revised stock1:\n";
         stock1.show();
         cout << "Done\n";
-    //}
+    }
+    //代码段结束后会调用析构函数
     return 0;
 }
