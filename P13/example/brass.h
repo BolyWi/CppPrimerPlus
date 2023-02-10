@@ -21,7 +21,7 @@ public:
 };
 
 //Brass Plus Account Class
-class BrassPlus :Brass
+class BrassPlus :public Brass
 {
 private:
 	double maxLoan;
