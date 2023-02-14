@@ -1,3 +1,5 @@
+// use_stuc.cpp -- using a composite class
+//compile with studentc.cpp
 #include <iostream>
 #include "studentc.h"
 
@@ -11,7 +13,8 @@ const int quizzes = 5;
 
 int main()
 {
-    Student ada[pupils] = {Student(quizzes), Student(quizzes), Student(quizzes)};
+    Student ada[pupils] = 
+        {Student(quizzes), Student(quizzes), Student(quizzes)};
     int i;
     for(i = 0; i < pupils; ++i)
         set(ada[i], quizzes);

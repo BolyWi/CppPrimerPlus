@@ -1,9 +1,12 @@
+// studentc.cpp -- Student class using containment
 #include "studentc.h"
 
 using std::ostream;
 using std::endl;
 using std::istream;
 using std::string;
+
+// public method
 
 double Student::Average() const
 {
@@ -23,6 +26,12 @@ double& Student::operator[](int i)
     return scores[i];
 }
 
+double Student::operator[](int i) const
+{
+    return scores[i];
+}
+
+// private method
 ostream& Student::arr_out(ostream& os) const
 {
     int i;
@@ -43,18 +52,22 @@ ostream& Student::arr_out(ostream& os) const
     return os;
 }
 
+// friends
+// use string version of operator>>()
 istream& operator>>(istream& is, Student &stu)
 {
     is >> stu.name;
     return is;
 }
 
+// use string friend getline(ostream &, const string &)
 istream& getline(istream& is, Student& stu)
 {
     getline(is, stu.name);
     return is;
 }
 
+// use string version of operator<<()
 ostream& operator<<(ostream &os, const Student& stu)
 {
     os << "Scores for " << stu.name << ":\n";

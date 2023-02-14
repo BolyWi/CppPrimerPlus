@@ -1,3 +1,4 @@
+// studentc.h -- defining a Student class using containment
 #ifndef STUDENTC_H_
 #define STUDENTC_H_
 
