@@ -27,6 +27,7 @@ public:
     double Average() const;
     double& operator[](int i);
     double operator[](int i) const;
+    const std::string & Name() const;
 
     friend std::istream& operator>>(std::istream& is, Student& stu);
     friend std::istream& getline(std::istream& is, Student& stu);
