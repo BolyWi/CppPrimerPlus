@@ -34,3 +34,13 @@
 		...
 	}
 	```
+- 模板的具体化
+    - 隐式具体化
+        `ArrayTP<int, 100> stuff;`
+    - 显示实例化
+        `template class ArrayTP<string, 100>;`
+    - 显示具体化
+        `template <typename T>`
+        `class SortedArray`
+        `{`
+        `}`
