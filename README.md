@@ -1,2 +1,5 @@
-# C++PrimerPlus Note/Code
-## P10 对象和类
+# C Primer plus
+# C++PrimerPlus
+# CMake
+# make
+
