@@ -13,5 +13,6 @@ int main()
     printf("0x1234 ==>d_ntohs:%x\n", d_ntohs);
     printf("0x12345678 ==>d_htonl:%x\n", d_htonl);
     printf("0x12345678 ==>d_ntohl:%x\n", d_ntohl);
+    inet_ntoa()
     return 0;
 }
