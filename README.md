@@ -1,5 +1,7 @@
 # C Primer plus
-# C++PrimerPlus
+# C++ PrimerPlus
+# C++ STL
+# Qt
 # CMake
 # make
 
