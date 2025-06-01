@@ -17,6 +17,11 @@
 #include <time.h>
 
 using namespace std;
+
+// fstream::out // write content
+// fstream::in //  read content
+// fstream::app // append content
+
 void file_op(string file_name, string content)
 {
     fstream file;
